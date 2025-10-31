@@ -5,3 +5,4 @@ Link to Client Pitch Presentation - https://www.canva.com/design/DAG27j2PPAA/j7R
 
 Code References & Bibliography List - [GADS_References_Bibliography_List.pdf](https://github.com/user-attachments/files/23266779/GADS_References_Bibliography_List.pdf)
 
+Project Schedule - [GADS_ProjectSchedule.xlsx](https://github.com/user-attachments/files/23267587/GADS_ProjectSchedule.xlsx)
