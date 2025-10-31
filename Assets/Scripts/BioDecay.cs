@@ -26,4 +26,14 @@ public class BioDecay : MonoBehaviour
     {
         
     }
+
+    public void HealBio(float heal)
+    {
+        bioDecayPecent += heal;
+    }
+
+    public void HurtBio(float heal)
+    { 
+        bioDecayPecent -= heal; 
+    }
 }

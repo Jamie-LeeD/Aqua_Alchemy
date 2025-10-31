@@ -30,6 +30,11 @@ public class Projectile : MonoBehaviour
             return;
         }
 
+        PlayerHealth health = collision.GetComponent<PlayerHealth>();
+        if (health != null)
+        {
+            health.TakeDamage(damage);
+        }
         // If hitting a non-trigger collider (wall), destroy
         if (!collision.isTrigger)
         {
