@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public GameObject TutorialMsg;
     [Header("Stats")]
     public int health = 20;
     public float attackRange = 6f;          // how far it can shoot
@@ -16,6 +17,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        TutorialMsg.SetActive(false);
         // Find the player in the scene by tag
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
@@ -72,7 +74,9 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        TutorialMsg.SetActive(true);
         Debug.Log(name + " died!");
         Destroy(gameObject);
+        BioDecay.Instance.HealBio(50.0f);
     }
 }
